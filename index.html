@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quizilla-Style Fantasy Quiz</title>
+</head>
+<body>
+    <main>
+        <h1 id="quiz-title">What kind of fantasy being are you?</h1>
+        <p id="description">Remember Quizilla? This is a survey form in the style of those early Internet quizzes us Millenials were so fond of... enjoy!</p>
+        
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name">Your Name: </label>
+                <input id="name" type="text" class="box" placeholder="Sabriel Abhorsen">
+            </div>
+            <div>
+                <label id="email-label" for="email">Email to send results to: </label>
+                <input id="email" type="email" class="box" placeholder="sabriel@magic.net">
+            </div>
+            <div>
+                <label id="number-label" for="number">What year were you born? </label>
+                <input id="number" type="number" class="box" placeholder="1990" min="1900" max="2023">
+            </div>
+            <div>
+                <label for="dropdown">Did you use Quizilla?</label>
+                <select name="Quizilla" id="dropdown" class="box">
+                  <option value="yess">Yes!</option>
+                  <option value="vague">I vaguely remember it.</option>
+                  <option value="noo">Don't think so.</option>
+                  <option value="omg">I spent all my time creating quizzes and/or reading fanfic!</option>
+                </select>
+            </div>
+
+          <fieldset>
+            <legend>What is your gender? (Check all that apply)</legend>
+            <label for="fluid">
+              <input id="fluid" value="fluid" type="checkbox">
+              Genderfluid
+            </label>
+            <label for="nonbinary">
+                <input id="nonbinary" value="nb" type="checkbox">
+                Nonbinary
+            </label>
+            <label for="transfem">
+              <input id="transfem" value="transfem" type="checkbox">
+              Trans gal
+            </label>
+            <label for="transmasc">
+              <input id="transmasc" value="transmasc" type="checkbox">
+              Trans guy
+            </label>
+            <label for="cisfem">
+              <input id="cisfem" value="cisfem" type="checkbox">
+              Cis gal
+            </label>
+            <label for="cisman">
+              <input id="cisman" value="cisman" type="checkbox">
+              Cis guy
+            </label>
+            <label for="magic">
+              <input id="magic" value="magic" type="checkbox">
+              Nothing ordinary mortals can perceive...
+            </label>
+          </fieldset>
+
+          <fieldset>
+              <legend>What kind of cat would you most like to pet?</legend>
+                  <label for="darkmeow">
+                    <input id="darkmeow" value="dark" type="radio" name="cat">
+                    A stormy cat full of darkness.</label>
+                  <label for="rainbowmeow">
+                    <input id="rainbowmeow" value="rainbow" type="radio" name="cat">
+                    A rainbow cat with bright colorful stripes.
+                  </label>
+                  <label for="softmeow">
+                    <input id="softmeow" value="gentle" type="radio" name="cat">
+                    A soft cuddly cat the color of custard.
+                  </label>
+                  <label for="sunmeow">
+                    <input id="sunmeow" value="glitter" type="radio" name="cat">
+                    An angelic cat that sparkles in the sun.
+                  </label>
+          </fieldset>
+
+          <fieldset>
+              <legend>How do you react when you meet new people?</legend>
+                  <label for="hug">
+                    <input id="hug" value="rainbow" type="radio" name="greeting">
+                    I run up to them and give them a hug! (With consent.)
+                  </label>
+                  <label for="shy">
+                    <input id="shy" value="gentle" type="radio" name="greeting">
+                    I look at them uncertainly and give a shy smile.
+                  </label>
+                  <label for="showoff">
+                    <input id="showoff" value="glitter" type="radio" name="greeting">
+                    I tilt my face to show off my beautiful features and my best side.
+                  </label>
+                  <label for="ignore">
+                    <input id="ignore" value="dark" type="radio" name="greeting">
+                    I ignore them. Why should I give them my attention?
+                  </label>
+          </fieldset>
+
+          <fieldset>
+              <legend>What sort of magic do you possess?</legend>
+                  <label for="comfort">
+                    <input id="comfort" value="gentle" type="radio" name="magic">
+                    The sort that comforts lost children and pets, or anyone who is sad!
+                  </label>
+                  <label for="glitter">
+                    <input id="glitter" value="glitter" type="radio" name="magic">
+                    I can make things glitter, or at least more pleasing to the eye.
+                  </label>           
+                  <label for="lightning">
+                    <input id="lightning" value="dark" type="radio" name="magic">
+                    The sort that sets your hair on end. I'm like a lightning storm all bottled up.
+                  </label>       
+                  <label for="dance">
+                    <input id="dance" value="rainbow" type="radio" name="magic">
+                    The sort that gets people out of their seats and DANCING!
+                  </label>
+          </fieldset>
+
+          <fieldset>
+              <legend>What do you eat?</legend>
+                  <label for="dew">
+                    <input id="dew" value="gentle" type="radio" name="food">
+                    Dewdrops gathered at dawn.
+                  </label>
+                  <label for="firstborns">
+                    <input id="firstborns" value="dark" type="radio" name="food">
+                    Tender firstborn children... or at least their auras *smiles*
+                  </label>
+                  <label for="galaxy">
+                    <input id="galaxy" value="glitter" type="radio" name="food">
+                    Galaxies and nebulas (that don't mind me eating them, of course).
+                  </label>
+                  <label for="soup">
+                    <input id="soup" value="rainbow" type="radio" name="food">
+                    Hearty soups made from seasonal veggies :)
+                  </label>
+          </fieldset>
+      
+          <p><label for="speech" class="question" id="lastone">Last but not least, what would you say to express yourself? Be creative!</label></p>
+          <p><textarea placeholder="Write your unique thoughts or greeting upon meeting another being." id="input-thoughts" value="speech" class="box"></textarea></p>
+        
+          </p><button id="submit-btn" type="submit" class="box">See your results!</button>
+
+        </form>
+
+        </main>
+
+        <div class="results-modal">
+          <!--Pop-up with results, hidden until submission-->
+        </div>
+
+        <footer>
+            <p>Image credit: Krystal Ng on Unsplash</p>
+            <p>Made by <a href="https://jincodes.com">Jin Zeng</a></p> 
+        </footer>
+
+      <script type="module" src="index.js"></script>
+</body>
+</html>
